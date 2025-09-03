@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <%= link_to t(".home"), root_path, class: "navbar-brand" %>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <%= link_to t(".products"), products_path, class: "nav-link" %>
+            </li>
+        </ul>
+        <%= button_to t(".log_out"), session_path, method: :delete, class: "btn btn-outline-danger" if authenticated? %>
+        <%= link_to t(".log_in"), new_session_path, class: "btn btn-outline-primary" unless authenticated? %>
+    </div>
+</nav>

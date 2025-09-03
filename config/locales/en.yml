@@ -59,3 +59,31 @@ en:
       product_updated: "Product was successfully updated."
     destroy:
       product_destroyed: "Product was successfully destroyed."
+  sessions:
+    new:
+      title: "Sign In"
+      email_placeholder: "Enter your email address"
+      password_placeholder: "Enter your password"
+      submit: "Sign In"
+      no_account: "Don't have an account?"
+      forgot_password: "Forgot password?"
+
+    create:
+      sign_in: "Signed in successfully"
+      invalid_credentials: "Invalid email address or password."
+
+    destroy:
+      sign_out: "Signed out successfully"
+
+  passwords:
+    new:
+      title: "Forgot your password?"
+      email_placeholder: "Enter your email address"
+      submit: "Email reset instructions"
+
+  shared:
+    nav:
+      home: "Home"
+      products: "Products"
+      log_out: "Log out"
+      log_in: "Log in"

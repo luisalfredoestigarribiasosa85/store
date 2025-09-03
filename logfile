@@ -49,3 +49,21 @@
 2025-09-02 20:57:33.315 -03 [4916] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.002 s, total=0.317 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2BA67060, redo lsn=0/2BA67008
 2025-09-02 21:12:32.544 -03 [4916] LOG:  checkpoint starting: time
 2025-09-02 21:12:32.856 -03 [4916] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.002 s, total=0.312 s; sync files=4, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2BA676A8, redo lsn=0/2BA67650
+2025-09-02 22:22:34.170 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 22:22:39.639 -03 [4916] LOG:  checkpoint complete: wrote 55 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.444 s, sync=0.018 s, total=5.469 s; sync files=53, longest=0.003 s, average=0.001 s; distance=192 kB, estimate=192 kB; lsn=0/2BA97A00, redo lsn=0/2BA979A8
+2025-09-02 22:27:34.739 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 22:27:35.562 -03 [4916] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.810 s, sync=0.005 s, total=0.823 s; sync files=7, longest=0.005 s, average=0.001 s; distance=1 kB, estimate=173 kB; lsn=0/2BA97E00, redo lsn=0/2BA97DA8
+2025-09-02 22:34:54.334 -03 [34935] FATAL:  role "root" does not exist
+2025-09-02 22:35:04.862 -03 [34953] FATAL:  role "root" does not exist
+2025-09-02 22:36:48.529 -03 [35005] FATAL:  role "store" does not exist
+2025-09-02 22:37:13.979 -03 [35021] FATAL:  role "store" does not exist
+2025-09-02 22:42:34.801 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 22:42:36.035 -03 [4916] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.219 s, sync=0.003 s, total=1.235 s; sync files=9, longest=0.003 s, average=0.001 s; distance=9 kB, estimate=157 kB; lsn=0/2BA9A5A0, redo lsn=0/2BA9A548
+2025-09-02 22:47:34.135 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 22:47:34.247 -03 [4916] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.005 s, total=0.112 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=141 kB; lsn=0/2BA9A808, redo lsn=0/2BA9A7B0
+2025-09-02 22:52:34.348 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 22:52:34.881 -03 [4916] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.513 s, sync=0.004 s, total=0.534 s; sync files=6, longest=0.003 s, average=0.001 s; distance=1 kB, estimate=127 kB; lsn=0/2BA9AD70, redo lsn=0/2BA9AD18
+2025-09-02 22:57:34.981 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 22:57:35.503 -03 [4916] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.507 s, sync=0.003 s, total=0.522 s; sync files=6, longest=0.003 s, average=0.001 s; distance=2 kB, estimate=115 kB; lsn=0/2BA9B678, redo lsn=0/2BA9B620
+2025-09-02 23:02:34.588 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 23:02:35.414 -03 [4916] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.810 s, sync=0.005 s, total=0.826 s; sync files=9, longest=0.004 s, average=0.001 s; distance=3 kB, estimate=103 kB; lsn=0/2BA9C5C0, redo lsn=0/2BA9C568
