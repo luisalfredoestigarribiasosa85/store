@@ -1,0 +1,4 @@
+<h1><%= t(".title") %></h1>
+<%= render "shared/form", product: @product %>
+
+<%= link_to t(".back"), product_path(@product), class: "btn btn-link" %>

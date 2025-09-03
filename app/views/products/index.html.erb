@@ -1,0 +1,21 @@
+<main class="container my-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1><%= t(".title") %></h1>
+    <%= link_to t(".new"), new_product_path, class: "btn btn-primary" %>
+  </div>
+
+  <% if @products.any? %>
+    <div class="list-group">
+      <% @products.each do |product| %>
+        <%= link_to product.name, product, class: "list-group-item list-group-item-action" %>
+      <% end %>
+    </div>
+  <% else %>
+    <div class="card text-center">
+      <div class="card-body">
+        <p class="card-text"><%= t(".no_products") %></p>
+        <%= link_to t(".create_one"), new_product_path, class: "btn btn-success" %>
+      </div>
+    </div>
+  <% end %>
+</main>

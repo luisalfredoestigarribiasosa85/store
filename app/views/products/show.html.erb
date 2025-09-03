@@ -1,0 +1,9 @@
+<h1><%= @product.name %></h1>
+<p>
+  <strong><%= t(".created_at") %>:</strong>
+  <%= l @product.created_at, format: :long %>
+</p>
+
+<%= link_to t(".edit"), edit_product_path(@product), class: "btn btn-warning" %>
+<%= button_to t(".delete"), @product, method: :delete, data: { turbo_confirm: t(".confirm_delete") }, class: "btn btn-danger" %>
+<%= link_to t(".back"), products_path, class: "btn btn-link" %>

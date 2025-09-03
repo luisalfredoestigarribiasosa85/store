@@ -1,0 +1,51 @@
+2025-08-31 20:51:58.406 -03 [8164] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-08-31 20:51:58.407 -03 [8164] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-08-31 20:51:58.410 -03 [8164] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-08-31 20:51:58.499 -03 [8167] LOG:  database system was shut down at 2025-08-29 19:29:15 -03
+2025-08-31 20:51:58.542 -03 [8164] LOG:  database system is ready to accept connections
+2025-08-31 20:52:09.164 -03 [8324] FATAL:  database "store_development" does not exist
+2025-08-31 20:52:11.392 -03 [8370] FATAL:  database "store_development" does not exist
+2025-08-31 20:54:20.254 -03 [8164] LOG:  received fast shutdown request
+2025-08-31 20:54:20.257 -03 [8164] LOG:  aborting any active transactions
+2025-08-31 20:54:20.273 -03 [8164] LOG:  background worker "logical replication launcher" (PID 8170) exited with exit code 1
+2025-08-31 20:54:20.274 -03 [8165] LOG:  shutting down
+2025-08-31 20:54:20.278 -03 [8165] LOG:  checkpoint starting: shutdown immediate
+2025-08-31 20:54:20.300 -03 [8165] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.027 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2B61A9F8, redo lsn=0/2B61A9F8
+2025-08-31 20:54:20.320 -03 [8164] LOG:  database system is shut down
+2025-08-31 20:55:46.303 -03 [9248] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-08-31 20:55:46.303 -03 [9248] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-08-31 20:55:46.307 -03 [9248] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-08-31 20:55:46.319 -03 [9251] LOG:  database system was shut down at 2025-08-31 20:54:20 -03
+2025-08-31 20:55:46.349 -03 [9248] LOG:  database system is ready to accept connections
+2025-08-31 20:56:32.895 -03 [9823] FATAL:  database "store_development" does not exist
+2025-08-31 20:56:35.676 -03 [9850] FATAL:  database "store_development" does not exist
+2025-08-31 20:57:53.101 -03 [10034] FATAL:  database "store_development" does not exist
+2025-08-31 21:00:46.418 -03 [9249] LOG:  checkpoint starting: time
+2025-08-31 21:02:22.045 -03 [9249] LOG:  checkpoint complete: wrote 952 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=95.617 s, sync=0.002 s, total=95.627 s; sync files=318, longest=0.001 s, average=0.001 s; distance=4393 kB, estimate=4393 kB; lsn=0/2BA64FE8, redo lsn=0/2BA64F58
+2025-08-31 21:10:46.247 -03 [9249] LOG:  checkpoint starting: time
+2025-08-31 21:10:46.791 -03 [9249] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.521 s, sync=0.005 s, total=0.545 s; sync files=5, longest=0.004 s, average=0.001 s; distance=0 kB, estimate=3954 kB; lsn=0/2BA652E8, redo lsn=0/2BA65290
+2025-09-02 19:32:29.943 -03 [4915] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-09-02 19:32:29.945 -03 [4915] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-09-02 19:32:29.952 -03 [4915] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-09-02 19:32:30.034 -03 [4918] LOG:  database system was interrupted; last known up at 2025-08-31 21:10:46 -03
+2025-09-02 19:32:30.437 -03 [4918] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-09-02 19:32:30.446 -03 [4918] LOG:  redo starts at 0/2BA65290
+2025-09-02 19:32:30.446 -03 [4918] LOG:  invalid record length at 0/2BA65398: expected at least 24, got 0
+2025-09-02 19:32:30.447 -03 [4918] LOG:  redo done at 0/2BA65360 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-09-02 19:32:30.460 -03 [4916] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-09-02 19:32:30.470 -03 [4916] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.012 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2BA65398, redo lsn=0/2BA65398
+2025-09-02 19:32:30.476 -03 [4915] LOG:  database system is ready to accept connections
+2025-09-02 19:37:30.572 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 19:37:30.885 -03 [4916] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.003 s, total=0.313 s; sync files=4, longest=0.003 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2BA657C0, redo lsn=0/2BA65768
+2025-09-02 20:17:31.583 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 20:17:31.699 -03 [4916] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.117 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2BA65A98, redo lsn=0/2BA65A40
+2025-09-02 20:37:32.092 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 20:37:32.204 -03 [4916] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.113 s; sync files=2, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2BA65F40, redo lsn=0/2BA65EE8
+2025-09-02 20:47:32.391 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 20:47:32.500 -03 [4916] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.001 s, total=0.109 s; sync files=2, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2BA66388, redo lsn=0/2BA66330
+2025-09-02 20:52:32.600 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 20:52:32.913 -03 [4916] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.002 s, total=0.313 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2BA66870, redo lsn=0/2BA66818
+2025-09-02 20:57:32.999 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 20:57:33.315 -03 [4916] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.002 s, total=0.317 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2BA67060, redo lsn=0/2BA67008
+2025-09-02 21:12:32.544 -03 [4916] LOG:  checkpoint starting: time
+2025-09-02 21:12:32.856 -03 [4916] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.002 s, total=0.312 s; sync files=4, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/2BA676A8, redo lsn=0/2BA67650
