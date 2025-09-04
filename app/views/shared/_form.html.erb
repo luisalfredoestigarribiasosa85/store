@@ -17,5 +17,15 @@
     <%= form.text_field :name, class: "form-control" %>
   </div>
 
+  <div class="mb-3">
+    <%= form.label :description, class: "form-label d-block" %>
+    <%= form.rich_text_area :description, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :featured_image, class: "form-label d-block" %>
+    <%= form.file_field :featured_image, accept: "image/*", class: "form-control" %>
+  </div>
+
   <%= form.submit class: "btn btn-primary" %>
 <% end %>

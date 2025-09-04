@@ -1,5 +1,9 @@
 <% cache @product do %>
-  <h1><%= @product.name %></h1>
+  <div class="container my-4 align-content-center text-center">
+    <h1><%= @product.name %></h1>
+    <%= @product.description %>
+    <%= image_tag @product.featured_image, class: "img-fluid w-50 mb-3" if @product.featured_image.attached? %>
+  </div>
 <% end %>
 <p>
   <strong><%= t(".created_at") %>:</strong>

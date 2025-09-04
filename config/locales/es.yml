@@ -1,0 +1,126 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+es:
+  hello: "Hola mundo"
+  date:
+    month_names:
+      - ~
+      - Enero
+      - Febrero
+      - Marzo
+      - Abril
+      - Mayo
+      - Junio
+      - Julio
+      - Agosto
+      - Septiembre
+      - Octubre
+      - Noviembre
+      - Diciembre
+    abbr_month_names:
+      - ~
+      - Ene
+      - Feb
+      - Mar
+      - Abr
+      - May
+      - Jun
+      - Jul
+      - Ago
+      - Sep
+      - Oct
+      - Nov
+      - Dic
+    day_names:
+      - Domingo
+      - Lunes
+      - Martes
+      - Miércoles
+      - Jueves
+      - Viernes
+      - Sábado
+  time:
+    formats:
+      long: "%-d de %B de %Y, %H:%M"
+  products:
+    index:
+      title: "Lista de Productos"
+      new: "Nuevo Producto"
+      no_products: "No se encontraron productos."
+      create_one: "¡Crea uno!"
+
+    new:
+      title: "Nuevo Producto"
+      back: "Volver a Productos"
+
+    edit:
+      title: "Editar Producto"
+      back: "Volver a Producto"
+
+    show:
+      created_at: "Creado el"
+      edit: "Editar producto"
+      delete: "Eliminar producto"
+      confirm_delete: "¿Estás seguro?"
+      back: "Volver a productos"
+    create:
+      product_created: "El producto fue creado con éxito."
+    update:
+      product_updated: "El producto fue actualizado con éxito."
+    destroy:
+      product_destroyed: "El producto fue eliminado con éxito."
+  sessions:
+    new:
+      title: "Iniciar sesión"
+      email_placeholder: "Introduce tu dirección de correo electrónico"
+      password_placeholder: "Introduce tu contraseña"
+      submit: "Iniciar sesión"
+      no_account: "¿No tienes una cuenta?"
+      forgot_password: "¿Olvidaste tu contraseña?"
+
+    create:
+      sign_in: "Sesión iniciada con éxito"
+      invalid_credentials: "Dirección de correo electrónico o contraseña inválida."
+
+    destroy:
+      sign_out: "Sesión cerrada con éxito"
+
+  passwords:
+    new:
+      title: "¿Olvidaste tu contraseña?"
+      email_placeholder: "Introduce tu dirección de correo electrónico"
+      submit: "Instrucciones para restablecer el correo electrónico"
+
+  shared:
+    nav:
+      home: "Inicio"
+      products: "Productos"
+      log_out: "Cerrar sesión"
+      log_in: "Iniciar sesión"
