@@ -38,6 +38,7 @@ en:
       new: "New Product"
       no_products: "No products found."
       create_one: "Create one!"
+      inventory: "In Stock"
 
     new:
       title: "New Product"

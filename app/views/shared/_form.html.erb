@@ -27,5 +27,10 @@
     <%= form.file_field :featured_image, accept: "image/*", class: "form-control" %>
   </div>
 
+  <div class="mb-3">
+    <%= form.label :inventory_count, class: "form-label d-block" %>
+    <%= form.number_field :inventory_count, class: "form-control", step: "1" %>
+  </div>
+
   <%= form.submit class: "btn btn-primary" %>
 <% end %>

@@ -75,6 +75,7 @@ es:
       new: "Nuevo Producto"
       no_products: "No se encontraron productos."
       create_one: "¡Crea uno!"
+      inventory: "En Stock"
 
     new:
       title: "Nuevo Producto"
