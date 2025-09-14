@@ -88,3 +88,17 @@ en:
       products: "Products"
       log_out: "Log out"
       log_in: "Log in"
+      hello_user: "Hello, %{user}"
+
+  sign_ups:
+    new:
+      title: "Create an account"
+      full_name_placeholder: "Enter your full name"
+      email_placeholder: "Enter your email address"
+      password_placeholder: "Enter your password"
+      password_confirmation_placeholder: "Confirm your password"
+      submit: "Create Account"
+      have_account: "Already have an account?"
+    create:
+      account_created: "Account created successfully. You are now signed in."
+      account_creation_failed: "There was a problem creating your account."

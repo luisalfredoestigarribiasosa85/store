@@ -125,3 +125,4 @@ es:
       products: "Productos"
       log_out: "Cerrar sesión"
       log_in: "Iniciar sesión"
+      hello_user: "Hola, %{user}"

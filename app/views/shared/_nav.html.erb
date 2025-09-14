@@ -6,7 +6,13 @@
                 <%= link_to t(".products"), products_path, class: "nav-link text-light" %>
             </li>
         </ul>
+        <% if authenticated? %>
+            <span class="navbar-text text-light me-3">
+                <%= t(".hello_user", user: current_user.full_name) %>
+            </span>
+        <% end %>
         <%= button_to t(".log_out"), session_path, method: :delete, class: "btn btn-outline-danger" if authenticated? %>
         <%= link_to t(".log_in"), new_session_path, class: "btn btn-outline-primary" unless authenticated? %>
+        <%= link_to t(".sign_up"), new_sign_up_path, class: "btn btn-outline-success ms-2" unless authenticated? %>
     </div>
 </nav>
