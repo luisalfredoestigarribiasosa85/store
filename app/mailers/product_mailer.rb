@@ -12,7 +12,7 @@ class ProductMailer < ApplicationMailer
       @subscriber = subscriber
       mail(
         to: subscriber.email,
-        subject: 'Product Back In Stock',
+        subject: "Product Back In Stock",
         params: { subscriber: subscriber }
       )
     end

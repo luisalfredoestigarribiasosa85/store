@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:17.2
+    environment:
+      POSTGRES_DB: store_production
+      POSTGRES_USER: store
+      POSTGRES_PASSWORD: store
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    depends_on:
+      - db
+    environment:
+      DATABASE_HOST: db
+      DATABASE_USER: store
+      DATABASE_PASSWORD: store
+      DATABASE_NAME: store_production
+      SECRET_KEY_BASE: 5c4266c3ef6a746f105daab0714307391e199ee8fcc3b91550febb1bf98c57eb1e5d26ef18a72abaa20294f3230dc63f8f34ccb20e1a7edef1c69e9e6adbd70a
+    ports:
+      - "3000:3000"
+
+volumes:
+  postgres_data:
