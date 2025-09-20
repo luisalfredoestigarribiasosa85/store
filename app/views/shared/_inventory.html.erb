@@ -1,12 +1,12 @@
 <% if product.inventory_count? %>
     <div class="alert alert-success d-flex align-items-center" role="alert">
         <i class="bi bi-check-circle-fill me-2"></i>
-        <span><%= product.inventory_count %> in stock</span>
+        <span><%= product.inventory_count %> <%= t(".in_stock") %></span>
     </div>
 <% else %>
     <div class="alert alert-danger d-flex align-items-center" role="alert">
         <i class="bi bi-x-circle-fill me-2"></i>
-        <span>Out of stock</span>
+        <span><%= t(".out_of_stock_show") %></span>
     </div>
     <div class="card mt-3">
         <div class="card-body">

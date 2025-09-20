@@ -8,11 +8,12 @@
         </ul>
         <% if authenticated? %>
             <span class="navbar-text text-light me-3">
-                <%= t(".hello_user", user: current_user.full_name) %>
+                <%= t(".hello_user", user: "#{current_user.full_name} (#{current_user.email_address})") %>
             </span>
         <% end %>
+        <%= link_to t(".edit_profile"), settings_profile_path, class: "btn btn-outline-secondary me-2 text-white" if authenticated? %>
         <%= button_to t(".log_out"), session_path, method: :delete, class: "btn btn-outline-danger" if authenticated? %>
         <%= link_to t(".log_in"), new_session_path, class: "btn btn-outline-primary" unless authenticated? %>
-        <%= link_to t(".sign_up"), new_sign_up_path, class: "btn btn-outline-success ms-2" unless authenticated? %>
+        <%= link_to t(".sign_up"), sign_up_path, class: "btn btn-outline-success ms-2" unless authenticated? %>
     </div>
 </nav>

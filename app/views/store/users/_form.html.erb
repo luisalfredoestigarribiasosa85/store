@@ -1,0 +1,21 @@
+<%= form_with model: [ :store, user ] do |form| %>
+  <div class="mb-3">
+    <%= form.label :first_name, class: "form-label" %>
+    <%= form.text_field :first_name, required: true, autofocus: true, autocomplete: "given-name", class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :last_name, class: "form-label" %>
+    <%= form.text_field :last_name, required: true, autocomplete: "family-name", class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :email_address, class: "form-label" %>
+    <%= form.email_field :email_address, required: true, autocomplete: "email", class: "form-control" %>
+  </div>
+
+  <div>
+    <%= form.submit t(".update"), class: "btn btn-primary" %>
+    <%= link_to t(".cancel"), store_users_path, class: "btn btn-outline-secondary" %>
+  </div>
+<% end %>

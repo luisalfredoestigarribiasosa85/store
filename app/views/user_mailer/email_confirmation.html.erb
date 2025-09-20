@@ -1,0 +1,14 @@
+<h1>Email Confirmation</h1>
+
+<p>
+  To confirm your email address, please click the link below:
+</p>
+
+<p>
+  <%= link_to "Confirm my email address", email_confirmation_url(token: @token) %>
+</p>
+<pre>
+  If you did not request this change, please ignore this email.
+  Thank you,
+  The Store Team
+</pre>

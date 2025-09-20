@@ -39,6 +39,8 @@ en:
       no_products: "No products found."
       create_one: "Create one!"
       inventory: "In Stock"
+      out_of_stock: "Out of Stock"
+      view: "View Product"
 
     new:
       title: "New Product"
@@ -54,12 +56,15 @@ en:
       delete: "Delete product"
       confirm_delete: "Are you sure?"
       back: "Back to products"
+      
+
     create:
       product_created: "Product was successfully created."
     update:
       product_updated: "Product was successfully updated."
     destroy:
       product_destroyed: "Product was successfully destroyed."
+
   sessions:
     new:
       title: "Sign In"
@@ -89,6 +94,17 @@ en:
       log_out: "Log out"
       log_in: "Log in"
       hello_user: "Hello, %{user}"
+      edit_profile: "Edit Profile"
+      change_password: "Change Password"
+      sign_up: "Sign Up"
+
+    inventory:
+      in_stock: "In Stock"
+      out_of_stock_show: "Out of Stock"
+
+    footer:
+      powered_by: "Powered by Ruby on Rails"
+      my_store: "My Store"
 
   sign_ups:
     new:
@@ -102,3 +118,108 @@ en:
     create:
       account_created: "Account created successfully. You are now signed in."
       account_creation_failed: "There was a problem creating your account."
+    show:
+      title: "Sign Up"
+      back: "Back to Home"
+      submit: "Sign Up"
+
+  settings:
+    passwords:
+      show:
+        title: "Change Password"
+        current_password_placeholder: "Enter your current password"
+        new_password_placeholder: "Enter your new password"
+        new_password_confirmation_placeholder: "Confirm your new password"
+        submit: "Update Password"
+      update:
+        password_updated: "Password updated successfully."
+        password_update_failed: "There was a problem updating your password."
+    
+    profiles:
+      show:
+        title: "Profile"
+        first_name: "First Name"
+        last_name: "Last Name"
+        full_name_placeholder: "Enter your full name"
+        email_placeholder: "Enter your email address"
+        submit: "Update Profile"
+        cancel: "Cancel"
+      update:
+        profile_updated: "Profile updated successfully."
+        profile_update_failed: "There was a problem updating your profile."
+
+    emails:
+      show:
+        title: "Confirm Email"
+        unconfirmed_email: "Unconfirmed Email"
+        submit: "Confirm Email"
+      update:
+        email_updated: "Email was successfully updated. Please confirm your new email address."
+        email_update_failed: "There was a problem updating your email address."
+
+    users:
+      show:
+        title: "Your Account"
+        destroy_account: "Delete Account"
+      destroy:
+        account_destroyed: "Your account has been successfully deleted."
+        account_destroy_failed: "There was a problem deleting your account."
+        confirm: "Are you sure you want to delete your account? This action cannot be undone."
+
+  layouts:
+    settings:
+      settings: "Settings"
+      profile: "Profile"
+      email: "Email"
+      password: "Password"
+      account: "Account"
+      admin: "Admin"
+      users: "Users"
+      user: "User"
+      account_settings: "Account Settings"
+      profile_settings: "Profile Settings"
+
+  store:
+    users:
+      index:
+        title: "Users"
+        no_users: "No users found."
+        back: "Back to Settings"
+      show:
+        title: "User Details"
+        back: "Back to Users"
+        edit: "Edit User"
+        delete_user: "Delete User"
+        confirm_delete: "Are you sure you want to delete this user?"
+      new:
+        title: "New User"
+        back: "Back to Users"
+      edit:
+        title: "Edit User"
+        back: "Back to User"
+      create:
+        user_created: "User was successfully created."
+      update:
+        user_updated: "User was successfully updated."
+      destroy:
+        user_destroyed: "User was successfully deleted."
+      form:
+        update: "Update"
+        cancel: "Cancel"
+
+
+  activerecord:
+    attributes:
+      user:
+        first_name: "First Name"
+        last_name: "Last Name"
+        email_address: "Email Address"
+        unconfirmed_email: "Unconfirmed Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+        password_challenge: "Current Password"
+      product:
+        name: "Name"
+        description: "Description"
+        price: "Price"
+        inventory_count: "Inventory Count"

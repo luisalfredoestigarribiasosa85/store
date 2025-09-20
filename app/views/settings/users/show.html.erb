@@ -1,0 +1,4 @@
+<h1><%= t(".title") %></h1>
+<p>
+  <%= button_to t(".destroy_account"), settings_user_path, method: :delete, data: { turbo_confirm: t(".confirm") }, class: "btn btn-danger" %>
+</p>

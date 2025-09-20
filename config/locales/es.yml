@@ -76,6 +76,8 @@ es:
       no_products: "No se encontraron productos."
       create_one: "¡Crea uno!"
       inventory: "En Stock"
+      out_of_stock: "Agotado"
+      view: "Ver Producto"
 
     new:
       title: "Nuevo Producto"
@@ -91,6 +93,7 @@ es:
       delete: "Eliminar producto"
       confirm_delete: "¿Estás seguro?"
       back: "Volver a productos"
+
     create:
       product_created: "El producto fue creado con éxito."
     update:
@@ -126,3 +129,133 @@ es:
       log_out: "Cerrar sesión"
       log_in: "Iniciar sesión"
       hello_user: "Hola, %{user}"
+      edit_profile: "Editar Perfil"
+      change_password: "Cambiar Contraseña"
+      sign_up: "Regístrate"
+
+    inventory:
+      in_stock: "En Stock"
+      out_of_stock_show: "Agotado"
+
+    footer:
+      powered_by: "Desarrollado con Ruby on Rails"
+      my_store: "Mi Tienda"
+
+  sign_ups:
+    new:
+      title: "Regístrate"
+      email_placeholder: "Introduce tu dirección de correo electrónico"
+      password_placeholder: "Introduce tu contraseña"
+      password_confirmation_placeholder: "Confirma tu contraseña"
+      submit: "Regístrate"
+      have_account: "¿Ya tienes una cuenta?"
+    create:
+      account_created: "Cuenta creada con éxito. Ahora estás logueado."
+      account_creation_failed: "Hubo un problema al crear tu cuenta."
+    show:
+      title: "Regístrate"
+      back: "Volver a Inicio"
+      submit: "Regístrate"
+
+  settings:
+    passwords:
+      show:
+        title: "Cambiar contraseña"
+        current_password_placeholder: "Introduce tu contraseña actual"
+        new_password_placeholder: "Introduce tu nueva contraseña"
+        new_password_confirmation_placeholder: "Confirma tu nueva contraseña"
+        submit: "Cambiar contraseña"
+      update:
+        password_updated: "La contraseña fue cambiada con éxito."
+        password_update_failed: "Hubo un problema al cambiar tu contraseña."
+    profiles:
+      show:
+        title: "Perfil"
+        first_name: "Nombre"
+        last_name: "Apellido"
+        full_name_placeholder: "Introduce tu nombre completo"
+        email_placeholder: "Introduce tu dirección de correo electrónico"
+        submit: "Actualizar perfil"
+        cancel: "Cancelar"
+
+      update:
+        profile_updated: "El perfil fue actualizado con éxito."
+        profile_update_failed: "Hubo un problema al actualizar tu perfil."
+
+    emails:
+      show:
+        title: "Confirmar correo electrónico"
+        unconfirmed_email: "Correo electrónico no confirmado"
+        submit: "Confirmar correo electrónico"
+      update:
+        email_updated: "El correo electrónico fue actualizado con éxito. Por favor, confirma tu nuevo correo electrónico."
+        email_update_failed: "Hubo un problema al actualizar tu correo electrónico."
+
+    users:
+      show:
+        title: "Tu cuenta"
+        destroy_account: "Eliminar cuenta"
+      destroy:
+        account_destroyed: "Tu cuenta ha sido eliminada con éxito."
+        account_destroy_failed: "Hubo un problema al eliminar tu cuenta."
+        confirm: "¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer."
+
+  layouts:
+    settings:
+      settings: "Configuración"
+      profile: "Perfil"
+      email: "Correo electrónico"
+      password: "Contraseña"
+      account: "Cuenta"
+      admin: "Admin"
+      users: "Usuarios"
+      user: "Usuario"
+      account_settings: "Configuración de la cuenta"
+      profile_settings: "Configuración del perfil"
+
+  store:
+    users:
+      index:
+        title: "Usuarios"
+        no_users: "No se encontraron usuarios."
+        back: "Volver a Configuración"
+      show:
+        title: "Detalles de Usuario"
+        back: "Volver a Usuarios"
+        edit: "Editar Usuario"
+        delete_user: "Eliminar Usuario"
+        confirm_delete: "¿Estás seguro de que quieres eliminar este usuario?"
+      new:
+        title: "Nuevo Usuario"
+        back: "Volver a Usuarios"
+      edit:
+        title: "Editar Usuario"
+        back: "Volver a Usuario"
+      create:
+        user_created: "El usuario fue creado con éxito."
+      update:
+        user_updated: "El usuario fue actualizado con éxito."
+      destroy:
+        user_destroyed: "El usuario fue eliminado con éxito."
+      form:
+        update: "Actualizar"
+        cancel: "Cancelar"
+
+  activerecord:
+    attributes:
+      user:
+        first_name: "Nombre"
+        last_name: "Apellido"
+        email_address: "Dirección de correo electrónico"
+        unconfirmed_email: "Correo electrónico no confirmado"
+        password: "Contraseña"
+        password_confirmation: "Confirmación de contraseña"
+        current_password: "Contraseña actual"
+        new_password: "Nueva contraseña"
+        new_password_confirmation: "Confirmación de nueva contraseña"
+        password_challenge: "Contraseña actual"
+      product:
+        name: "Nombre"
+        description: "Descripción"
+        price_cents: "Precio (en centavos)"
+        inventory_count: "Cantidad en inventario"

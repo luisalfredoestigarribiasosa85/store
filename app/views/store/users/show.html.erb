@@ -1,0 +1,9 @@
+<%= link_to "Back to all users", store_users_path, class: "btn btn-outline-secondary" %>
+
+<h1><%= @user.full_name %></h1>
+<p><%= @user.email_address %></p>
+
+<div class="mb-3">
+  <%= link_to t(".edit"), edit_store_user_path(@user), class: "btn btn-primary" %>
+  <%= button_to t(".delete_user"), store_user_path(@user), method: :delete, data: { turbo_confirm: t(".confirm_delete") }, class: "btn btn-danger" %>
+</div>

@@ -30,6 +30,20 @@ nav {
     padding: 1rem;
 }
 
+section.settings {
+  display: flex;
+  gap: 1rem;
+}
+
+section.settings nav {
+  width: 200px;
+}
+
+section.settings nav a {
+  display: block;
+}
+
+
 nav a {
   display: inline-block;
 }

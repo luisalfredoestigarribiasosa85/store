@@ -1,0 +1,29 @@
+<h1><%= t(".title") %></h1>
+
+<%= form_with model: Current.user, url: settings_email_path do |form| %>
+  <% if form.object.errors.any? %>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <h2 class="h4"><%= pluralize(form.object.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <ul>
+        <% form.object.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :unconfirmed_email, class: "form-label" %>
+    <%= form.email_field :unconfirmed_email, required: true, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :password_challenge, class: "form-label" %>
+    <%= form.password_field :password_challenge, required: true, autocomplete: "current-password", class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit t(".submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>

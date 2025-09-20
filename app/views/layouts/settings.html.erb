@@ -1,0 +1,37 @@
+<%= content_for :content do %>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          <%= t(".profile_settings") %>
+        </div>
+        <div class="card-body">
+          <nav class="nav nav-pills flex-column">
+            <%= link_to t(".profile"), settings_profile_path, class: "nav-link #{is_active?(settings_profile_path)}" %>
+            <%= link_to t(".email"), settings_email_path, class: "nav-link #{is_active?(settings_email_path)}" %>
+            <%= link_to t(".password"), settings_password_path, class: "nav-link #{is_active?(settings_password_path)}" %>
+            <%= link_to t(".account"), settings_user_path, class: "nav-link #{is_active?(settings_user_path)}" %>
+            <% if current_user.admin? %>
+              <div class="card-header mt-3">
+                <%= t(".account_settings") %>
+              </div>
+              <nav class="nav nav-pills flex-column">
+                <%= link_to t(".users"), store_users_path, class: "nav-link #{is_active?(store_users_path)}" %>
+              </nav>
+            <% end %>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-body">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
+<%= render template: "layouts/application" %>
