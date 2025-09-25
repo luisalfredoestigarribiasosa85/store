@@ -212,8 +212,39 @@ es:
       user: "Usuario"
       account_settings: "Configuración de la cuenta"
       profile_settings: "Configuración del perfil"
+      store_settings: "Configuración de la tienda"
+      products: "Productos"
+      product: "Producto"
 
   store:
+    products:
+      index:
+        title: "Productos"
+        new: "Nuevo Producto"
+        no_products: "No se encontraron productos."
+        create_one: "Crea uno!"
+        inventory: "Inventario"
+        view: "Ver"
+      show:
+        title: "Detalles del Producto"
+        view_in_storefront: "Ver en el frontstore"
+        back: "Volver a Productos"
+        edit: "Editar Producto"
+        delete: "Eliminar Producto"
+        confirm_delete: "¿Estás seguro de que quieres eliminar este producto?"
+      new:
+        title: "Nuevo Producto"
+        back: "Volver a Productos"
+      edit:
+        title: "Editar Producto"
+        back: "Volver a Producto"
+      create:
+        product_created: "El producto fue creado con éxito."
+      update:
+        product_updated: "El producto fue actualizado con éxito."
+      destroy:
+        product_destroyed: "El producto fue eliminado con éxito."
+
     users:
       index:
         title: "Usuarios"
@@ -259,3 +290,4 @@ es:
         description: "Descripción"
         price_cents: "Precio (en centavos)"
         inventory_count: "Cantidad en inventario"
+        featured_image: "Imagen destacada"

@@ -10,8 +10,7 @@
   <strong><%= t(".created_at") %>:</strong>
   <%= l @product.created_at, format: :long %>
 </p>
-<p>
-  <strong><%= t(".updated_at") %>:</strong>
-  <%= l @product.updated_at, format: :long %>
-</p>
-<%= link_to t(".back"), products_path, class: "btn btn-link" %>
+<%= link_to t(".view_in_storefront"), product_path(@product), class: "btn btn-info" %>
+<%= link_to t(".edit"), edit_store_product_path(@product), class: "btn btn-warning" %>
+<%= button_to t(".delete"), [ :store, @product ], method: :delete, data: { turbo_confirm: t(".confirm_delete") }, class: "btn btn-danger" %>
+<%= link_to t(".back"), store_products_path, class: "btn btn-link" %>

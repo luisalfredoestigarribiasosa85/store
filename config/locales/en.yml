@@ -178,8 +178,47 @@ en:
       user: "User"
       account_settings: "Account Settings"
       profile_settings: "Profile Settings"
+      store_settings: "Store Settings"
+      products: "Products"
+      product: "Product"
+
 
   store:
+    products:
+      index:
+        title: "Products"
+        new: "New Product"
+        no_products: "No products found."
+        create_one: "Create one!"
+        inventory: "Inventory"
+        view: "View"
+      show:
+        title: "Product Details"
+        view_in_storefront: "View in Storefront"
+        back: "Back to Products"
+        edit: "Edit Product"
+        delete: "Delete Product"
+        confirm_delete: "Are you sure you want to delete this product?"
+      new:
+        title: "New Product"
+        back: "Back to Products"
+      edit:
+        title: "Edit Product"
+        back: "Back to Product"
+      create:
+        product_created: "Product was successfully created."
+      update:
+        product_updated: "Product was successfully updated."
+      destroy:
+        product_destroyed: "Product was successfully deleted."
+      form:
+        name: "Name"
+        description: "Description"
+        price: "Price"
+        inventory_count: "Inventory Count"
+        create: "Create"
+        update: "Update"
+        cancel: "Cancel"
     users:
       index:
         title: "Users"
@@ -223,3 +262,4 @@ en:
         description: "Description"
         price: "Price"
         inventory_count: "Inventory Count"
+        featured_image: "Featured Image"

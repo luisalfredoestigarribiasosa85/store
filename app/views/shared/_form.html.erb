@@ -1,11 +1,11 @@
-<%= form_with(model: product) do |form| %>
+<%= form_with model: [ :store, product ] do |form| %>
   <%# Display validation errors if any %>
-  <% if product.errors.any? %>
+  <% if form.object.errors.any? %>
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      <h2 class="h4"><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+      <h2 class="h4"><%= pluralize(form.object.errors.count, "error") %> prohibited this product from being saved:</h2>
       <ul>
-        <% product.errors.full_messages.each do |message| %>
+        <% form.object.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>
