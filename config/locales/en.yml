@@ -97,6 +97,7 @@ en:
       edit_profile: "Edit Profile"
       change_password: "Change Password"
       sign_up: "Sign Up"
+      account_settings: "Account Settings"
 
     inventory:
       in_stock: "In Stock"
@@ -160,6 +161,8 @@ en:
     users:
       show:
         title: "Your Account"
+        warning: "Deleting your account is a permanent action and cannot be undone."
+        back: "<- Back to Settings"
         destroy_account: "Delete Account"
       destroy:
         account_destroyed: "Your account has been successfully deleted."

@@ -47,3 +47,18 @@ section.settings nav a {
 nav a {
   display: inline-block;
 }
+
+.animate {
+  animation: pulse 2s 5;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

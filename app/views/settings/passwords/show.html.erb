@@ -13,17 +13,17 @@
   <% end %>
   <div class="mb-3">
     <%= form.label :password_challenge, class: "form-label" %>
-    <%= form.password_field :password_challenge, required: true, autocomplete: "current-password", class: "form-control" %>
+    <%= form.password_field :password_challenge, required: true, autocomplete: "current-password", class: "form-control", placeholder: t(".current_password_placeholder") %>
   </div>
 
   <div class="mb-3">
     <%= form.label :password, class: "form-label" %>
-    <%= form.password_field :password, required: true, autocomplete: "new-password", class: "form-control" %>
+    <%= form.password_field :password, required: true, autocomplete: "new-password", class: "form-control", placeholder: t(".new_password_placeholder") %>
   </div>
 
   <div class="mb-3">
     <%= form.label :password_confirmation, class: "form-label" %>
-    <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", class: "form-control" %>
+    <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", class: "form-control", placeholder: t(".new_password_confirmation_placeholder") %>
   </div>
 
   <%= form.submit t(".submit"), class: "btn btn-primary mb-2" %>

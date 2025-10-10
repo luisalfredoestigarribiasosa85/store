@@ -132,6 +132,7 @@ es:
       edit_profile: "Editar Perfil"
       change_password: "Cambiar Contraseña"
       sign_up: "Regístrate"
+      account_settings: "Configuración de la Cuenta"
 
     inventory:
       in_stock: "En Stock"
@@ -194,6 +195,8 @@ es:
     users:
       show:
         title: "Tu cuenta"
+        back: "<- Volver a Configuración"
+        warning: "Eliminar tu cuenta es una acción permanente y no se puede deshacer."
         destroy_account: "Eliminar cuenta"
       destroy:
         account_destroyed: "Tu cuenta ha sido eliminada con éxito."

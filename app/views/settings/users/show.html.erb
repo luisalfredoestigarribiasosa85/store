@@ -1,4 +1,9 @@
 <h1><%= t(".title") %></h1>
 <p>
+  <%= link_to t(".back"), settings_profile_path, class: "btn btn-secondary" %>
+</p>
+<p><strong><%= current_user.full_name %></strong> (<%= current_user.email_address %>)</p>
+<p class="text-danger animate"><%= t(".warning") %></p>
+<p>
   <%= button_to t(".destroy_account"), settings_user_path, method: :delete, data: { turbo_confirm: t(".confirm") }, class: "btn btn-danger" %>
 </p>
